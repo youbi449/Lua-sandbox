@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { LuaFactory } = require('wasmoon');
 
 const app = express();
-const port = 3000;
+const port = 3003;
 
 // Configuration limits
 const MAX_EXECUTION_TIME = 2000; // 2 seconds
