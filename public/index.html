@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua Sandbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lua Sandbox</h1>
+        </header>
+        
+        <main>
+            <div class="editor-container">
+                <textarea id="code-input" placeholder="Entrez votre code Lua ici..."></textarea>
+                <div class="char-counter">
+                    <span id="char-count">0</span>/1000 caractères
+                </div>
+            </div>
+
+            <button id="execute-btn">Exécuter</button>
+
+            <button id="show-functions-btn">Afficher les fonctions autorisées</button>
+
+            <div id="allowed-functions" class="hidden">
+                <h2>Fonctions autorisées</h2>
+                <div id="functions-list">
+                    <!-- La liste sera remplie dynamiquement par JavaScript -->
+                </div>
+            </div>
+
+            <div class="output-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="output">Output</button>
+                    <button class="tab-btn" data-tab="errors">Erreurs</button>
+                </div>
+                <div class="tab-content active" id="output">
+                    <pre id="output-text"></pre>
+                </div>
+                <div class="tab-content" id="errors">
+                    <pre id="error-text"></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

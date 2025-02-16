@@ -1,0 +1,22 @@
+{
+  "name": "lua-sandbox",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A Lua sandbox with a web interface",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fengari": "^0.1.4",
+    "fengari-web": "^0.1.4",
+    "lua.vm.js": "^0.0.1",
+    "wasmoon": "^1.16.0"
+  }
+}
